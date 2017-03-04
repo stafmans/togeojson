@@ -1,3 +1,20 @@
+## 0.16.0
+
+* Supports the `link` tag in GPX data.
+* Supports the `type` tag for waypoints in GPX data.
+
+## 0.15.0
+
+* Supports the `cmt` (comment) tag in GPX data.
+
+## 0.14.2
+
+* Fixes a potential crash with QGIS-generated GPX files.
+
+## 0.14.0
+
+* Now includes TimeStamp property from Placemarks, if it exists.
+
 ## 0.13.0
 
 * Added support for StyleMap elements in Google-flavored KML

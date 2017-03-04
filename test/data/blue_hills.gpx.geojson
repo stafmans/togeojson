@@ -5,6 +5,7 @@
             "type": "Feature",
             "properties": {
                 "name": "BIG LOOP",
+                "cmt": "Sun Jun 24 15:08:39 2001",
                 "desc": "Big loop around the base of Great Blue Hill",
                 "time": "2001-06-24T15:09:09Z",
                 "coordTimes": [
@@ -1900,6 +1901,7 @@
             "type": "Feature",
             "properties": {
                 "name": "BUCK HILL",
+                "cmt": "Sat Oct 13 17:55:25 2001",
                 "desc": "The usual ride around Buck Hill",
                 "time": "2001-10-13T17:55:59Z",
                 "coordTimes": [
@@ -4911,6 +4913,7 @@
             "type": "Feature",
             "properties": {
                 "name": "SHORT LOOP",
+                "cmt": "Sat May 26 15:14:37 2001",
                 "desc": "Short Loop skipping the loop around Buck Hill",
                 "time": "2001-05-26T15:15:07Z",
                 "coordTimes": [
@@ -7555,6 +7558,7 @@
             "properties": {
                 "name": "LOOKOUT",
                 "desc": "Lookout Rock",
+                "type": "rock",
                 "time": "2001-06-24T20:59:47Z",
                 "sym": "Summit"
             },
@@ -7572,6 +7576,7 @@
             "properties": {
                 "name": "1072",
                 "desc": "1072",
+                "type": "Dot",
                 "time": "2001-10-13T23:50:58Z",
                 "sym": "Dot"
             },
@@ -7589,6 +7594,7 @@
             "properties": {
                 "name": "1081",
                 "desc": "1081",
+                "type": "Dot",
                 "time": "2001-06-24T20:59:47Z",
                 "sym": "Dot"
             },
@@ -7606,6 +7612,7 @@
             "properties": {
                 "name": "1082",
                 "desc": "1082",
+                "type": "Dot",
                 "time": "2001-05-26T21:52:38Z",
                 "sym": "Dot"
             },
@@ -7653,6 +7660,7 @@
             "properties": {
                 "name": "1103",
                 "desc": "1103",
+                "type": "Dot",
                 "time": "2001-05-26T21:52:38Z",
                 "sym": "Dot"
             },
@@ -7670,6 +7678,7 @@
             "properties": {
                 "name": "1110",
                 "desc": "1110",
+                "type": "Dot",
                 "time": "2001-06-24T20:59:48Z",
                 "sym": "Dot"
             },
@@ -7687,6 +7696,7 @@
             "properties": {
                 "name": "1114",
                 "desc": "1114",
+                "type": "Dot",
                 "time": "2001-05-26T21:52:38Z",
                 "sym": "Dot"
             },
@@ -7704,6 +7714,7 @@
             "properties": {
                 "name": "1135",
                 "desc": "1135",
+                "type": "Dot",
                 "time": "2001-10-13T23:50:58Z",
                 "sym": "Dot"
             },
@@ -7721,6 +7732,7 @@
             "properties": {
                 "name": "1140 LOGS",
                 "desc": "1140 - The log pyramid",
+                "type": "Danger Area",
                 "time": "2001-05-26T21:52:37Z",
                 "sym": "Danger Area"
             },
@@ -7738,6 +7750,7 @@
             "properties": {
                 "name": "1141",
                 "desc": "1141",
+                "type": "Dot",
                 "time": "2001-06-24T20:59:47Z",
                 "sym": "Dot"
             },
@@ -7755,6 +7768,7 @@
             "properties": {
                 "name": "1175",
                 "desc": "1175",
+                "type": "Dot",
                 "time": "2001-05-26T21:52:38Z",
                 "sym": "Dot"
             },
@@ -7787,6 +7801,7 @@
             "properties": {
                 "name": "1185",
                 "desc": "1185",
+                "type": "Dot",
                 "time": "2001-06-24T20:59:47Z",
                 "sym": "Dot"
             },
@@ -7819,6 +7834,7 @@
             "properties": {
                 "name": "2070",
                 "desc": "2070",
+                "type": "Dot",
                 "time": "2001-05-26T21:52:36Z",
                 "sym": "Dot"
             },
@@ -7836,6 +7852,7 @@
             "properties": {
                 "name": "2096",
                 "desc": "2096",
+                "type": "Dot",
                 "time": "2001-06-24T20:59:46Z",
                 "sym": "Dot"
             },
@@ -7853,6 +7870,7 @@
             "properties": {
                 "name": "2112",
                 "desc": "2112",
+                "type": "Dot",
                 "time": "2001-05-26T21:52:36Z",
                 "sym": "Dot"
             },
@@ -7870,6 +7888,7 @@
             "properties": {
                 "name": "7672 ROAD",
                 "desc": "Road",
+                "type": "Truck Stop",
                 "time": "2001-05-26T21:52:36Z",
                 "sym": "Truck Stop"
             },
@@ -7887,6 +7906,7 @@
             "properties": {
                 "name": "7711 ROAD",
                 "desc": "Unquity Road",
+                "type": "Truck Stop",
                 "time": "2001-05-26T21:52:36Z",
                 "sym": "Truck Stop"
             },
@@ -7904,6 +7924,7 @@
             "properties": {
                 "name": "BEACH",
                 "desc": "Beach",
+                "type": "Dot",
                 "time": "2001-05-26T21:52:37Z",
                 "sym": "Dot"
             },
@@ -7921,6 +7942,7 @@
             "properties": {
                 "name": "BEECH-RUN",
                 "desc": "BEECH-RUN",
+                "type": "Dot",
                 "time": "2001-05-26T21:52:41Z",
                 "sym": "Dot"
             },
@@ -7937,6 +7959,7 @@
             "properties": {
                 "name": "BOYCE",
                 "desc": "Boyce Hill",
+                "type": "Summit",
                 "time": "2001-05-26T21:52:44Z",
                 "sym": "Summit"
             },
@@ -7954,6 +7977,7 @@
             "properties": {
                 "name": "BREAKNECK",
                 "desc": "Breakneck Ledge",
+                "type": "Dangerous Area",
                 "time": "2001-05-26T21:52:45Z",
                 "sym": "Dangerous Area"
             },
@@ -7971,6 +7995,7 @@
             "properties": {
                 "name": "BREEZEHILL",
                 "desc": "BREEZEHILL",
+                "type": "Summit",
                 "time": "2001-05-26T21:52:45Z",
                 "sym": "Summit"
             },
@@ -7988,6 +8013,7 @@
             "properties": {
                 "name": "BUCK",
                 "desc": "Buck Hill",
+                "type": "Summit",
                 "time": "2001-05-26T21:52:46Z",
                 "sym": "Summit"
             },
@@ -8005,6 +8031,7 @@
             "properties": {
                 "name": "BURNT-HILL",
                 "desc": "BURNT-HILL",
+                "type": "Summit",
                 "time": "2001-05-26T21:52:46Z",
                 "sym": "Summit"
             },
@@ -8022,6 +8049,7 @@
             "properties": {
                 "name": "BWZFLATO",
                 "desc": "BWZFLATO",
+                "type": "Shipwreck",
                 "time": "2001-10-13T23:50:58Z",
                 "sym": "Shipwreck"
             },
@@ -8039,6 +8067,7 @@
             "properties": {
                 "name": "DEADEND",
                 "desc": "Dead End",
+                "type": "Zoo",
                 "time": "2001-05-26T21:52:36Z",
                 "sym": "Zoo"
             },
@@ -8056,6 +8085,7 @@
             "properties": {
                 "name": "DEL-FLAT01",
                 "desc": "DEL-FLAT01",
+                "type": "Shipwreck",
                 "time": "2001-05-26T21:52:52Z",
                 "sym": "Shipwreck"
             },
@@ -8073,6 +8103,7 @@
             "properties": {
                 "name": "DEW-FLAT01",
                 "desc": "DEW-FLAT01",
+                "type": "Shipwreck",
                 "time": "2001-05-26T21:52:53Z",
                 "sym": "Shipwreck"
             },
@@ -8090,6 +8121,7 @@
             "properties": {
                 "name": "HANCOCK",
                 "desc": "Hancock Hill",
+                "type": "Summit",
                 "time": "2001-05-26T21:53:00Z",
                 "sym": "Summit"
             },
@@ -8107,6 +8139,7 @@
             "properties": {
                 "name": "HEMINGWAY",
                 "desc": "Hemingway Hill",
+                "type": "Summit",
                 "time": "2001-05-26T21:53:01Z",
                 "sym": "Summit"
             },
@@ -8124,6 +8157,7 @@
             "properties": {
                 "name": "HOUGHTON",
                 "desc": "Houghton Hill",
+                "type": "Summit",
                 "time": "2001-05-26T21:53:03Z",
                 "sym": "Summit"
             },
@@ -8141,6 +8175,7 @@
             "properties": {
                 "name": "HOUGHTPOND",
                 "desc": "HOUGHTPOND",
+                "type": "Fishing Area",
                 "time": "2001-05-26T21:53:03Z",
                 "sym": "Fishing Area"
             },
@@ -8158,6 +8193,7 @@
             "properties": {
                 "name": "HQ",
                 "desc": "Headquarters",
+                "type": "Building",
                 "time": "2001-05-26T21:52:37Z",
                 "sym": "Building"
             },
@@ -8175,6 +8211,7 @@
             "properties": {
                 "name": "LITTLBLUHI",
                 "desc": "LITTLBLUHI",
+                "type": "Summit",
                 "time": "2001-05-26T21:53:08Z",
                 "sym": "Summit"
             },
@@ -8192,6 +8229,7 @@
             "properties": {
                 "name": "LOOKOUT",
                 "desc": "Lookout Rock",
+                "type": "Scenic Area",
                 "time": "2001-05-26T21:52:37Z",
                 "sym": "Scenic Area"
             },
@@ -8209,6 +8247,7 @@
             "properties": {
                 "name": "PARKING",
                 "desc": "Parking",
+                "type": "Car",
                 "time": "2001-05-26T21:52:36Z",
                 "sym": "Car"
             },
@@ -8226,6 +8265,7 @@
             "properties": {
                 "name": "PIT",
                 "desc": "Gravel Pit",
+                "type": "Dot",
                 "time": "2001-10-13T23:50:58Z",
                 "sym": "Dot"
             },
@@ -8243,6 +8283,7 @@
             "properties": {
                 "name": "SINGLE",
                 "desc": "Pond Singletrack",
+                "type": "Dot",
                 "time": "2001-06-24T20:59:46Z",
                 "sym": "Dot"
             },
@@ -8260,6 +8301,7 @@
             "properties": {
                 "name": "SKIAREA",
                 "desc": "Ski Area",
+                "type": "Dot",
                 "time": "2001-06-24T20:59:46Z",
                 "sym": "Dot"
             },
@@ -8277,6 +8319,7 @@
             "properties": {
                 "name": "SUMMIT",
                 "desc": "Summit",
+                "type": "Dot",
                 "time": "2001-05-26T21:52:37Z",
                 "sym": "Tall Tower"
             },
@@ -8294,6 +8337,7 @@
             "properties": {
                 "name": "SUMMITROAD",
                 "desc": "Summit Road",
+                "type": "Truck Stop",
                 "time": "2001-05-26T21:52:37Z",
                 "sym": "Truck Stop"
             },
@@ -8311,6 +8355,7 @@
             "properties": {
                 "name": "TUCKER",
                 "desc": "Tucker Hill",
+                "type": "Summit",
                 "time": "2001-05-26T21:53:33Z",
                 "sym": "Summit"
             },

@@ -5,20 +5,12 @@
 # Convert KML and GPX to GeoJSON.
 
 This converts [KML](https://developers.google.com/kml/documentation/) & [GPX](http://www.topografix.com/gpx.asp)
-to
-[GeoJSON](http://www.geojson.org/), in a browser or with [nodejs](http://nodejs.org/).
+to [GeoJSON](http://www.geojson.org/), in a browser or with [Node.js](http://nodejs.org/).
 
-It is
-
-* Dependency-free
-* Tiny
-* Written in vanilla javascript that's jshint-friendly
-* Tested
-
-It is not
-
-* Concerned about ugly extensions to KML
-* Concerned with having an 'internal format' of its own
+* [x] Dependency-free
+* [x] Tiny
+* [x] Tested
+* [x] Node.js + Browsers
 
 Want to use this with [Leaflet](http://leafletjs.com/)? Try [leaflet-omnivore](https://github.com/mapbox/leaflet-omnivore)!
 
@@ -31,7 +23,7 @@ document as an XML DOM - not as a string. You can get this using jQuery's defaul
 `.ajax` function or using a bare XMLHttpRequest with the `.response` property
 holding an XML DOM.
 
-The output is a Javascript object of GeoJSON data. You can convert it to a string
+The output is a JavaScript object of GeoJSON data. You can convert it to a string
 with [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
 or use it directly in libraries like [mapbox.js](http://www.mapbox.com/mapbox.js/).
 
@@ -42,37 +34,36 @@ document as an XML DOM - not as a string. You can get this using jQuery's defaul
 `.ajax` function or using a bare XMLHttpRequest with the `.response` property
 holding an XML DOM.
 
-The output is a Javascript object of GeoJSON data, same as `.kml` outputs.
+The output is a JavaScript object of GeoJSON data, same as `.kml` outputs.
 
+## CLI
 
-## Using it as a console utility
-
-Install it into your path with `npm install -g togeojson`.
+Install it into your path with `npm install -g @mapbox/togeojson`.
 
 ```
 ~> togeojson file.kml > file.geojson
 ```
 
-## Using it as a nodejs library
+## Node.js
 
-Install it into your project with `npm install --save togeojson`.
+Install it into your project with `npm install --save @mapbox/togeojson`.
 
 ```javascript
 // using togeojson in nodejs
 
 var tj = require('togeojson'),
     fs = require('fs'),
-    // node doesn't have xml parsing or a dom. use jsdom
-    jsdom = require('jsdom').jsdom;
+    // node doesn't have xml parsing or a dom. use xmldom
+    DOMParser = require('xmldom').DOMParser;
 
-var kml = jsdom(fs.readFileSync('foo.kml', 'utf8'));
+var kml = new DOMParser().parseFromString(fs.readFileSync('foo.kml', 'utf8'));
 
 var converted = tj.kml(kml);
 
-var converted_with_styles = tj.kml(kml, { styles: true });
+var convertedWithStyles = tj.kml(kml, { styles: true });
 ```
 
-## Using it as a browser library
+## Browser
 
 Download it into your project like
 
@@ -91,32 +82,29 @@ $.ajax('test/data/linestring.kml').done(function(xml) {
 toGeoJSON doesn't include AJAX - you can use [jQuery](http://jquery.com/) for
 just AJAX.
 
-## KML
+### KML Feature Support
 
-Supported:
+* [x] Point
+* [x] Polygon
+* [x] LineString
+* [x] name & description
+* [x] ExtendedData
+* [x] SimpleData
+* [x] MultiGeometry -> GeometryCollection
+* [x] Styles with hashing
+* [x] Tracks & MultiTracks with `gx:coords`, including altitude
+* [x] [TimeSpan](https://developers.google.com/kml/documentation/kmlreference#timespan)
+* [x] [TimeStamp](https://developers.google.com/kml/documentation/kmlreference#timestamp)
+* [ ] NetworkLinks
+* [ ] GroundOverlays
 
-* Point
-* Polygon
-* LineString
-* name & description
-* ExtendedData
-* SimpleData
-* MultiGeometry -> GeometryCollection
-* Styles with hashing
-* Tracks & MultiTracks with `gx:coords`, including altitude
-* [TimeSpan](https://developers.google.com/kml/documentation/kmlreference#timespan)
+### GPX Feature Support
 
-Not supported yet:
-
-* NetworkLinks
-* GroundOverlays
-
-## GPX
-
-Supported:
-
-* Line Paths
-* 'name', 'desc', 'author', 'copyright', 'link', 'time', 'keywords' tags
+* [x] Line Paths
+* [x] Line styles
+* [ ] Properties
+  * [x] 'name', 'cmt', 'desc', 'link', 'time', 'keywords', 'sym', 'type' tags
+  * [ ] 'author', 'copyright' tags
 
 ## FAQ
 
@@ -131,6 +119,35 @@ chosen.
 
 Implied here is that this does not try to represent all data contained in KML
 styles.
+
+### Why doesn't toGeoJSON support NetworkLinks?
+
+The NetworkLink KML construct allows KML files to refer to other online
+or local KML files for their content. It's often used to let people pass around
+files but keep the actual content on servers.
+
+In order to support NetworkLinks, toGeoJSON would need to be asynchronous
+and perform network requests. These changes would make it more complex and less
+reliable in order to hit a limited usecase - we'd rather keep it simple
+and not require users to think about network connectivity and bandwith
+in order to convert files.
+
+NetworkLink support could be implemented in a separate library as a pre-processing
+step if desired.
+
+### Should toGeoJSON support feature X from KML?
+
+This module should support converting all KML and GPX features that have commonplace
+equivalents in GeoJSON.
+
+KML is a very complex format with many features. Some of these features, like NetworkLinks,
+folders, and GroundOverlays, don't have a GeoJSON equivalent. In these cases,
+toGeoJSON doesn't convert the features. It also doesn't crash on these constructs:
+toGeoJSON should be able to run on all valid KML and GPX files without crashing:
+but for some files it may have no output.
+
+We encourage other libraries to look into supporting these features, but
+support for them is out of scope for toGeoJSON.
 
 ## Protips:
 
